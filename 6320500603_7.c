@@ -7,15 +7,27 @@ int main()
     tmp=time*100;
     m=tmp%100;
     tmp/=100;
-    if(tmp<=11&&m<=59)
+    if(m>0)
     {
-        printf("%d:%d a.m.",tmp,m);
+        if(tmp<=11&&m<=59)
+        {
+            printf("%d:%d a.m.",tmp,m);
+        }
+        else
+        {
+            printf("%d:%d p.m.",tmp,m);
+        }
     }
     else
     {
-        printf("%d:%d p.m.",tmp,m);
+        if(tmp<=11&&m<=59)
+        {
+            printf("%d:%d0 a.m.",tmp,m);
+        }
+        else
+        {
+            printf("%d:%d0 p.m.",tmp,m);
+        }
     }
-
-
     return 0;
 }
