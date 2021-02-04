@@ -6,7 +6,7 @@ int main()
     scanf("%d %d %d",&n,&m,&t);
     fflush(stdin);
     scanf("%c",&c);
-    if(m>n*2)
+    if(m>n)
     {
         printf("R");
     }
