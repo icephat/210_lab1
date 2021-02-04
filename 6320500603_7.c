@@ -9,11 +9,11 @@ int main()
     tmp/=100;
     if(tmp<=11)
     {
-        printf("%d:%d a.m.",tmp,m);
+        printf("%.2f a.m.",time);
     }
     else
     {
-        printf("%d:%d p.m.",tmp,m);
+        printf("%.2f p.m.",time);
     }
     return 0;
 }
