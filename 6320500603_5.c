@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int N,i,max;
+    int N,i,max,c;
     scanf("%d",&N);
     int a[N];
 
@@ -16,9 +16,10 @@ int main()
         if(max<a[i])
         {
             max=a[i];
+            c=i;
         }
     }
-        printf("%d",max);
+        printf("%d %d",c+1,max);
 
     return 0;
 }
